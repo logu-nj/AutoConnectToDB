@@ -1,0 +1,6 @@
+@AutoConnectToDB_HostAddress = http://localhost:5079
+
+GET {{AutoConnectToDB_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
