@@ -1,5 +1,6 @@
 ﻿using AutoConnectToDB.Persistence.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 
 namespace AutoConnectToDB.Persistence
@@ -11,5 +12,6 @@ namespace AutoConnectToDB.Persistence
             
         }
         public DbSet<Student> Students { get; set; }
+
     }
 }

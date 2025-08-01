@@ -7,8 +7,9 @@ namespace AutoConnectToDB.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class SchoolController(ContextForDB db) : ControllerBase
+    public class SchoolController : ControllerBase
     {
+        public ContextForDB db;
         [HttpGet]
         public async Task<IEnumerable<Student>> Get()
         {
